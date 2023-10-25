@@ -170,8 +170,8 @@ public class AppComponent{
 
             if(outPort == null) {
                 // if the destination mac address is not recorded, flood
-                flood(context);
-		log.info("MAC address `{}` is missed on `{}`. Flood the packet.",
+                packetOut(context, PortNumber.FLOOD);
+		        log.info("MAC address `{}` is missed on `{}`. Flood the packet.",
                     dstMac.toString(), hostID.toString());
             }
             else {
@@ -202,12 +202,6 @@ public class AppComponent{
             flowObjectiveService.forward(hostID, flowRule);
             log.info("MAC address `{}` is matched on `{}`. Install a flow rule.", 
                     dst.toString(), hostID.toString()); 
-        }
-
-        // flood the packet
-        private void flood(PacketContext context)
-        {
-            packetOut(context, PortNumber.FLOOD);
         }
 
         // send the packet to the specified port
