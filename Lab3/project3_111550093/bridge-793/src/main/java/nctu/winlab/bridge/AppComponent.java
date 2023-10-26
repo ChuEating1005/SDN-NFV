@@ -91,7 +91,7 @@ public class AppComponent{
     @Reference(cardinality = ReferenceCardinality.MANDATORY)
     protected CoreService coreService;
 
-    private int flowTimeout = 10;
+    private int flowTimeout = 30;
     private int flowPriority = 30;
     private ApplicationId appId;
     private BridgeProcessor bridgeProcessor = new BridgeProcessor();
