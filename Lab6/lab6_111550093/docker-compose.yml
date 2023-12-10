@@ -30,7 +30,7 @@ services:
       - NET_ADMIN
       - NET_BROADCAST
     networks:
-      R1h1br:
+      R2h2br:
         ipv4_address: 172.19.0.3
     entrypoint: ["/bin/sh","-c"]
     command:
@@ -49,7 +49,7 @@ services:
       - NET_ADMIN
       - NET_BROADCAST
     networks:
-      R1h1br:
+      R4h3br:
         ipv4_address: 172.22.0.3
     entrypoint: ["/bin/sh","-c"]
     command:
@@ -68,7 +68,7 @@ services:
       - NET_ADMIN
       - NET_BROADCAST
     networks:
-      R1h1br:
+      R5h4br:
         ipv4_address: 172.24.0.3
     entrypoint: ["/bin/sh","-c"]
     command:
@@ -160,31 +160,37 @@ services:
 
 networks:
   R1h1br:
+    name: R1h1br
     driver: bridge
     ipam:
       config:
         - subnet: 172.18.0.0/16
   R2h2br:
+    name: R2h2br
     driver: bridge
     ipam:
       config:
         - subnet: 172.19.0.0/16
   R3R4br:
+    name: R3R4br
     driver: bridge
     ipam:
       config:
         - subnet: 172.21.0.0/16
   R4h3br:
+    name: R4h3br
     driver: bridge
     ipam:
       config:
         - subnet: 172.22.0.0/16
-  R4R5br:
+  R3R5br:
+    name: R3R5br
     driver: bridge
     ipam:
       config:
         - subnet: 172.23.0.0/16
   R5h4br:
+    name: R5h4br
     driver: bridge
     ipam:
       config:
