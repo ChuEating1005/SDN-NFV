@@ -7,11 +7,6 @@
         2.  C, C++, Java, Python
     - Recommanded:
         1.  Basic Linux OS skills 
-- Grading
-    - Lab Assignments 60% ( 10% x 6 )
-    - Final Project: 40%
-- Credit: 2
-- TA: sdnTA@win.cs.nctu.edu.tw
 - Reference Website:
     1. ONF: https://www.opennetworking.org/sdn-definition/
     2. SDN Reading List: https://www.netcraftsmen.com/resources/sdn-reading-list/
@@ -19,31 +14,36 @@
     4. ETSI NFV: https://www.etsi.org/technologies/nfv
     5. Prof. Scott Shenker's Talk "The Future of Networking, and the Past of Protocols": https://www.youtube.com/watch?v=YHeyuD89n1Y
     6. Beginner's Guide: https://www.telcocloudbridge.com/blog/a-beginners-guide-to-nfv-management-orchestration-mano/
+
 ## Lab1
-Environment setup.
+> Environment setup.
 - Ubuntu 22.04
 - ONOS
 - Mininet
 - Openflow
 - python
+
 ## Lab2
-Flow Rule
+> Flow Rule
 - flow rule in json
 - Openflow protocol
+
 ## Lab3
-SDN-enabled Learning Bridge
+> SDN-enabled Learning Bridge
 - java
 - onos app
 - FlowRuleService
 - FlowObjectiveService
+
 ## Lab4
-Unicast DHCP
+> Unicast DHCP
 - java
 - onos app
 - DHCP
 - IntentService
+
 ## Lab5
-Proxy ARP
+> Proxy ARP
 - java
 - onos app
 - EdgePortService
